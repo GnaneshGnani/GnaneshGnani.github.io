@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Sree Gnanesh Dommeti portfolio covering machine learning research, ML systems, and software engineering work.">
+    <title>Sree Gnanesh Dommeti</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"><span></span></div>
+    <canvas class="scroll-field" aria-hidden="true"></canvas>
+    <header class="site-header">
+      <a class="brand" href="#top">Sree Gnanesh Dommeti</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro-section" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h1 id="intro-title">Sree Gnanesh Dommeti</h1>
+          <div class="intro-body">
+            <p>
+              I am an Applied Machine Learning master's student at the University of Maryland, working across machine learning research, ML systems, and software engineering.
+            </p>
+            <p>
+              At FROOT Lab, I work with Alan Zaoxing Liu on ProjectASAP and NetArena. My current focus is approximation-first telemetry: workload analysis, streaming sketches, and query-serving paths that make large observability workloads easier to analyze.
+            </p>
+            <p>
+              At GAMMA Lab, I work with Dinesh Manocha on multimodal reasoning evaluation. The project studies how to break MLLM answers into reasoning steps and check whether those steps are grounded in the available visual and textual evidence.
+            </p>
+          </div>
+          <div class="action-row" aria-label="Profile links">
+            <a class="button primary" href="https://github.com/GnaneshGnani">GitHub</a>
+            <a class="button" href="https://linkedin.com/in/sree-gnanesh-dommeti-a801911b5">LinkedIn</a>
+            <a class="button" href="resumes/resume_ml_ai_engineer.pdf">Resume</a>
+          </div>
+        </div>
+        <aside id="work" class="current-focus" aria-label="Current focus">
+          <p class="eyebrow">Current focus</p>
+          <div class="focus-list">
+            <article class="focus-item">
+              <span class="focus-index">01</span>
+              <h3>ProjectASAP</h3>
+              <p>Approximation-first telemetry research for agent-era data pipelines.</p>
+              <ul>
+                <li>Workload-aware sketch planning for Prometheus-style observability queries.</li>
+                <li>Streaming summaries over live metrics instead of repeated raw time-series scans.</li>
+                <li>Approximate query serving for windowed aggregates, quantiles, and high-cardinality workloads.</li>
+              </ul>
+              <a href="https://projectasap.github.io">Project page</a>
+            </article>
+            <article class="focus-item">
+              <span class="focus-index">02</span>
+              <h3>NetArena MALT Purple Agent</h3>
+              <p>AgentBeats participant for NetArena's MALT data-center capacity-planning benchmark.</p>
+              <ul>
+                <li>Generates executable Python over topology graphs for count, list, rank, add, remove, and update tasks.</li>
+                <li>Packages the agent as a purple A2A service evaluated by a NetArena green benchmark.</li>
+                <li>Tracks practical benchmark behavior through correctness, safety, and latency signals.</li>
+              </ul>
+              <a href="https://github.com/GnaneshGnani/malt-purple-agent">Repository</a>
+            </article>
+            <article class="focus-item">
+              <span class="focus-index">03</span>
+              <h3>TraceGround</h3>
+              <p>Agentic video-reasoning system that turns model answers into grounded evidence traces.</p>
+              <ul>
+                <li>Processes video with planning, visual grounding, OCR/ASR, temporal localization, and verifier steps.</li>
+                <li>Outputs reasoning traces tied to evidence: timestamps, cropped frames, clips, key frames, and transcript snippets.</li>
+                <li>Evaluates whether each reasoning step is relevant, complete, temporally grounded, and factually supported.</li>
+              </ul>
+              <a href="https://github.com/GnaneshGnani/cot">Repository</a>
+            </article>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="projects-section" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Selected projects</p>
+          <h2 id="projects-title">Selected Work</h2>
+        </div>
+        <div class="filter-bar" role="tablist" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="research">Research</button>
+          <button class="filter-button" type="button" data-filter="ml">ML Systems</button>
+          <button class="filter-button" type="button" data-filter="software">Software</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+          <article class="project-card" data-category="research" data-repo="GnaneshGnani/vos">
+            <div class="project-meta">
+              <span>Research</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>TCOVITA</h3>
+            <p>Temporally consistent video instance segmentation with object-token association, Hungarian matching, and contrastive embedding supervision.</p>
+            <ul>
+              <li>32.8% fewer ID switches</li>
+              <li>41.4% higher association accuracy</li>
+              <li>YouTube-VOS 2019 experiments</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/vos">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="research software">
+            <div class="project-meta">
+              <span>Research / Software</span>
+              <span class="repo-stat">Project page</span>
+            </div>
+            <h3>ProjectASAP</h3>
+            <p>Approximation-first telemetry system using workload analysis, streaming sketches, and approximation-aware query serving for agent-era observability data.</p>
+            <ul>
+              <li>Prometheus remote_write ingest</li>
+              <li>Arroyo and Kafka streaming summaries</li>
+              <li>Rust query-serving path</li>
+            </ul>
+            <a href="https://projectasap.github.io">View project</a>
+          </article>
+
+          <article class="project-card" data-category="research" data-repo="GnaneshGnani/DiffSplat">
+            <div class="project-meta">
+              <span>3D Generative AI</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>DiffSplat 3D Gaussian Generation</h3>
+            <p>Text-to-3D Gaussian generation study using public DiffSplat checkpoints, CUDA rasterization setup, and controlled ablations.</p>
+            <ul>
+              <li>SD 1.5, PixArt-Sigma, and SD 3.5 M variants</li>
+              <li>Guidance, seed, and prompt-category sweeps</li>
+              <li>Native 3D versus independent 2D view analysis</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/DiffSplat">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="research ml" data-repo="GnaneshGnani/DiffSplat">
+            <div class="project-meta">
+              <span>3D Scene Editing</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>3D Gaussian Object Removal</h3>
+            <p>SAM 3 and Inpaint360GS extension for prompted object removal in real 360-degree Gaussian-splat scenes.</p>
+            <ul>
+              <li>Target-first object masks and Gaussian pruning</li>
+              <li>Virtual-view color and depth inpainting</li>
+              <li>Masked PSNR 32.77, SSIM 0.9855, LPIPS 0.0082</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/DiffSplat">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="ml" data-repo="GnaneshGnani/llm-inference-benchmark">
+            <div class="project-meta">
+              <span>ML Systems</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>LLM Inference Benchmark</h3>
+            <p>Production-like load testing for vLLM and SGLang serving Mistral-7B-Instruct-AWQ on EC2 GPU workloads.</p>
+            <ul>
+              <li>1 to 64 concurrent users</li>
+              <li>Poisson arrival workloads</li>
+              <li>Throughput and cost profiling</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/llm-inference-benchmark">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="ml" data-repo="CAFBrain-Project/CAFBrain">
+            <div class="project-meta">
+              <span>RAG System</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>CAFBrain</h3>
+            <p>Knowledge retrieval and content-generation system for Capital Area Food Bank materials, built around multimodal ingestion, FAISS retrieval, and human-in-the-loop review flows.</p>
+            <ul>
+              <li>10,000+ source pages</li>
+              <li>PDF, PPT, DOCX, and transcript parsing</li>
+              <li>Grant, blog, slide, and social draft workflows</li>
+            </ul>
+            <a href="https://github.com/CAFBrain-Project/CAFBrain">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="ml">
+            <div class="project-meta">
+              <span>Recommendation System</span>
+              <span class="repo-stat">Internship</span>
+            </div>
+            <h3>CampusAI Event Recommendation</h3>
+            <p>Connyct internship project for personalized campus event discovery using hybrid retrieval and collaborative filtering.</p>
+            <ul>
+              <li>FastAPI, Elasticsearch, MiniLM, and reciprocal-rank fusion</li>
+              <li>ALS/BPR collaborative filtering over implicit interactions</li>
+              <li>&lt;300 ms p95 retrieval and &lt;600 ms end-to-end latency</li>
+            </ul>
+            <a href="#experience">See experience</a>
+          </article>
+
+          <article class="project-card" data-category="ml" data-repo="GnaneshGnani/Fraud-Detection">
+            <div class="project-meta">
+              <span>MLOps</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>Real-Time Fraud Detection</h3>
+            <p>Containerized fraud inference pipeline with drift monitoring, experiment tracking, data versioning, and CI/CD automation.</p>
+            <ul>
+              <li>AWS ECS/Fargate deployment path</li>
+              <li>EvidentlyAI drift checks and ClearML tracking</li>
+              <li>DVC data versioning with CI/CD automation</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/Fraud-Detection">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="software" data-repo="GnaneshGnani/eXpOS">
+            <div class="project-meta">
+              <span>Systems</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>eXpOS Kernel</h3>
+            <p>Experimental operating system kernel work on process, memory, file, device, and resource management over the XSM simulator.</p>
+            <ul>
+              <li>Demand paging</li>
+              <li>Interrupts and system calls</li>
+              <li>Timer-driven context switching</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/eXpOS">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="software" data-repo="GnaneshGnani/NSS-Workflow">
+            <div class="project-meta">
+              <span>Full stack</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>NSS Workflow Management</h3>
+            <p>Role-based workflow system for student activity signups, attendance, proof submission, faculty review, and grading.</p>
+            <ul>
+              <li>300+ student workflow</li>
+              <li>3NF relational schema</li>
+              <li>Faculty review and proof-submission flow</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/NSS-Workflow">View repo</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section-band">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Where The Work Happened</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>November 2025 - Present</span>
+            <h3>Research Assistant, FROOT Lab</h3>
+            <p>ProjectASAP, plus separate NetArena MALT purple-agent work under Alan Zaoxing Liu.</p>
+          </article>
+          <article>
+            <span>January 2026 - Present</span>
+            <h3>Research Assistant, GAMMA Lab</h3>
+            <p>TraceGround: agentic video reasoning system for producing grounded traces with timestamps, frames, clips, and evidence-backed reasoning steps under Dinesh Manocha.</p>
+          </article>
+          <article>
+            <span>June 2025 - August 2025</span>
+            <h3>ML Engineer Intern, Connyct</h3>
+            <p>CampusAI event recommendation with hybrid retrieval, collaborative filtering, FastAPI, Elasticsearch, Docker, AWS, and MLflow.</p>
+          </article>
+          <article>
+            <span>July 2022 - July 2024</span>
+            <h3>Software Engineer, Qualcomm</h3>
+            <p>LTE modem software, RRC protocol debugging, production issue triage, fuzz testing, and Python automation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-title">
+        <div>
+          <p class="eyebrow">Resume variants</p>
+          <h2 id="resume-title">Resume Versions</h2>
+        </div>
+        <div class="resume-links">
+          <a href="resumes/resume_applied_scientist.pdf">Research</a>
+          <a href="resumes/resume_ml_ai_engineer.pdf">ML Systems</a>
+          <a href="resumes/resume_software_engineer.pdf">Software Infrastructure</a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>sreegnaneshdommeti@gmail.com</h2>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:sreegnaneshdommeti@gmail.com">Email</a>
+        <a href="https://github.com/GnaneshGnani">GitHub</a>
+        <a href="https://linkedin.com/in/sree-gnanesh-dommeti-a801911b5">LinkedIn</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
