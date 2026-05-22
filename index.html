@@ -26,13 +26,13 @@
           <h1 id="intro-title">Sree Gnanesh Dommeti</h1>
           <div class="intro-body">
             <p>
-              I am an Applied Machine Learning master's student at the University of Maryland, working across machine learning research, ML systems, and software engineering.
+              I recently completed an M.S. in Applied Machine Learning at the University of Maryland, working across machine learning research, ML systems, and software engineering.
             </p>
             <p>
               At FROOT Lab, I work with Alan Zaoxing Liu on ProjectASAP and NetArena. My current focus is approximation-first telemetry: workload analysis, streaming sketches, and query-serving paths that make large observability workloads easier to analyze.
             </p>
             <p>
-              At GAMMA Lab, I work with Dinesh Manocha on multimodal reasoning evaluation. The project studies how to break MLLM answers into reasoning steps and check whether those steps are grounded in the available visual and textual evidence.
+              I contributed to ongoing multimodal reasoning evaluation work with Dinesh Manocha, studying how to break MLLM answers into reasoning steps and check whether those steps are grounded in the available visual and textual evidence.
             </p>
           </div>
           <div class="action-row" aria-label="Profile links">
@@ -57,19 +57,19 @@
             </article>
             <article class="focus-item">
               <span class="focus-index">02</span>
-              <h3>NetArena MALT Purple Agent</h3>
-              <p>AgentBeats participant for NetArena's MALT data-center capacity-planning benchmark.</p>
+              <h3>NetArena MALT Benchmark Tooling</h3>
+              <p>Dockerized LiteLLM agent tooling for NetArena's MALT data-center capacity-planning task.</p>
               <ul>
-                <li>Generates executable Python over topology graphs for count, list, rank, add, remove, and update tasks.</li>
-                <li>Packages the agent as a purple A2A service evaluated by a NetArena green benchmark.</li>
-                <li>Tracks practical benchmark behavior through correctness, safety, and latency signals.</li>
+                <li>Uses structured prompts for count, list, rank, add, remove, and update tasks over topology graphs.</li>
+                <li>Validates structured outputs and retries failed generations before local submission.</li>
+                <li>Packages reproducible local benchmark workflows for iteration and review.</li>
               </ul>
               <a href="https://github.com/GnaneshGnani/malt-purple-agent">Repository</a>
             </article>
             <article class="focus-item">
               <span class="focus-index">03</span>
-              <h3>TraceGround</h3>
-              <p>Agentic video-reasoning system that turns model answers into grounded evidence traces.</p>
+              <h3>Grounded Video Reasoning Evaluation</h3>
+              <p>Ongoing agentic video-reasoning evaluation work that turns model answers into grounded evidence traces.</p>
               <ul>
                 <li>Processes video with planning, visual grounding, OCR/ASR, temporal localization, and verifier steps.</li>
                 <li>Outputs reasoning traces tied to evidence: timestamps, cropped frames, clips, key frames, and transcript snippets.</li>
@@ -90,6 +90,7 @@
           <button class="filter-button is-active" type="button" data-filter="all">All</button>
           <button class="filter-button" type="button" data-filter="research">Research</button>
           <button class="filter-button" type="button" data-filter="ml">ML Systems</button>
+          <button class="filter-button" type="button" data-filter="rl">RL</button>
           <button class="filter-button" type="button" data-filter="software">Software</button>
         </div>
         <div class="project-grid" id="projectGrid">
@@ -116,11 +117,26 @@
             <h3>ProjectASAP</h3>
             <p>Approximation-first telemetry system using workload analysis, streaming sketches, and approximation-aware query serving for agent-era observability data.</p>
             <ul>
-              <li>Prometheus remote_write ingest</li>
+              <li>Prometheus workload analysis</li>
               <li>Arroyo and Kafka streaming summaries</li>
               <li>Rust query-serving path</li>
             </ul>
             <a href="https://projectasap.github.io">View project</a>
+          </article>
+
+          <article class="project-card" data-category="research ml" data-repo="GnaneshGnani/disttrain-lab">
+            <div class="project-meta">
+              <span>Distributed Training</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>DistTrain Lab</h3>
+            <p>Distributed LLM post-training planner for comparing SFT/DPO/LoRA training configurations before expensive runs.</p>
+            <ul>
+              <li>Ray, FSDP, DeepSpeed, Megatron, and TorchTitan-style config sketches</li>
+              <li>Dataset manifests, evaluation plans, and promotion gates</li>
+              <li>Memory and throughput estimators with pytest validation</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/disttrain-lab">View repo</a>
           </article>
 
           <article class="project-card" data-category="research" data-repo="GnaneshGnani/DiffSplat">
@@ -168,6 +184,21 @@
             <a href="https://github.com/GnaneshGnani/llm-inference-benchmark">View repo</a>
           </article>
 
+          <article class="project-card" data-category="ml software" data-repo="GnaneshGnani/multi-agent-research-system">
+            <div class="project-meta">
+              <span>Agentic AI</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>Multi-Agent Research System</h3>
+            <p>Autonomous research workflow with typed agent state, local-corpus retrieval, persistent memory, and auditable quality gates.</p>
+            <ul>
+              <li>Planner, Researcher, Critic, and Synthesizer graph</li>
+              <li>Kafka-compatible event envelopes and OpenTelemetry-style traces</li>
+              <li>CLI and FastAPI entrypoints with checked-in demo reports</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/multi-agent-research-system">View repo</a>
+          </article>
+
           <article class="project-card" data-category="ml" data-repo="CAFBrain-Project/CAFBrain">
             <div class="project-meta">
               <span>RAG System</span>
@@ -193,9 +224,24 @@
             <ul>
               <li>FastAPI, Elasticsearch, MiniLM, and reciprocal-rank fusion</li>
               <li>ALS/BPR collaborative filtering over implicit interactions</li>
-              <li>&lt;300 ms p95 retrieval and &lt;600 ms end-to-end latency</li>
+              <li>sub-300ms p95 retrieval and sub-600ms end-to-end latency</li>
             </ul>
-            <a href="#experience">See experience</a>
+            <a href="https://apps.apple.com/us/app/campus-ai-college-assistant/id6751604501">View app</a>
+          </article>
+
+          <article class="project-card" data-category="ml software" data-repo="GnaneshGnani/callintel-agent">
+            <div class="project-meta">
+              <span>Audio RAG</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>CallIntel Agent</h3>
+            <p>Audio-to-RAG support QA prototype on GCP for grounded answers over call transcripts and policy evidence.</p>
+            <ul>
+              <li>FastAPI, Docker Compose, and Cloud Run-ready service path</li>
+              <li>Transcript PII redaction with audit events and cited answers</li>
+              <li>Faithfulness, context recall, citation precision, and latency reports</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/callintel-agent">View repo</a>
           </article>
 
           <article class="project-card" data-category="ml" data-repo="GnaneshGnani/Fraud-Detection">
@@ -206,11 +252,56 @@
             <h3>Real-Time Fraud Detection</h3>
             <p>Containerized fraud inference pipeline with drift monitoring, experiment tracking, data versioning, and CI/CD automation.</p>
             <ul>
-              <li>AWS ECS/Fargate deployment path</li>
-              <li>EvidentlyAI drift checks and ClearML tracking</li>
-              <li>DVC data versioning with CI/CD automation</li>
+              <li>Online and batch FastAPI inference paths</li>
+              <li>PR-AUC, recall at fixed FPR, and threshold-tuning reports</li>
+              <li>Drift-triggered retraining and monitoring dashboard artifacts</li>
             </ul>
             <a href="https://github.com/GnaneshGnani/Fraud-Detection">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="ml rl" data-repo="GnaneshGnani/pybullet_drone_navigation">
+            <div class="project-meta">
+              <span>Reinforcement Learning</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>PyBullet Drone Navigation</h3>
+            <p>Gymnasium-style PyBullet drone waypoint-navigation environment with actor-critic agents and sensor-fusion options.</p>
+            <ul>
+              <li>PPO, SAC, and DDPG training loops</li>
+              <li>Hover, square-path, and random-waypoint curricula</li>
+              <li>Optional camera, depth, lidar, obstacles, and GUI evaluation</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/pybullet_drone_navigation">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="ml rl software" data-repo="GnaneshGnani/Connect-Four">
+            <div class="project-meta">
+              <span>Reinforcement Learning</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>Connect Four RL Agent</h3>
+            <p>Self-play Connect Four agent with a Gymnasium-compatible environment, Double DQN training, and Dockerized play/training workflows.</p>
+            <ul>
+              <li>Legal-action masking and heuristic rewards</li>
+              <li>CNN/FFN Q-networks, replay memory, and target networks</li>
+              <li>Checkpointing, ClearML hooks, metric plots, and Pygame UI</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/Connect-Four">View repo</a>
+          </article>
+
+          <article class="project-card" data-category="ml" data-repo="GnaneshGnani/llm-posttrain-ragas-eval">
+            <div class="project-meta">
+              <span>LLM Evaluation</span>
+              <span class="repo-stat">GitHub</span>
+            </div>
+            <h3>LLM Post-Training &amp; RAGAS Eval</h3>
+            <p>Reproducible scaffold for preference-data validation, DPO-ready manifests, LoRA config generation, and RAGAS evaluation payloads.</p>
+            <ul>
+              <li>TRL and Accelerate launch planning</li>
+              <li>RAGAS-compatible faithfulness, answer relevancy, and context recall inputs</li>
+              <li>DVC metrics, W&amp;B/LangSmith hooks, and checked-in demo artifacts</li>
+            </ul>
+            <a href="https://github.com/GnaneshGnani/llm-posttrain-ragas-eval">View repo</a>
           </article>
 
           <article class="project-card" data-category="software" data-repo="GnaneshGnani/eXpOS">
@@ -254,22 +345,22 @@
           <article>
             <span>November 2025 - Present</span>
             <h3>Research Assistant, FROOT Lab</h3>
-            <p>ProjectASAP, plus separate NetArena MALT purple-agent work under Alan Zaoxing Liu.</p>
+            <p>ProjectASAP telemetry research plus NetArena MALT benchmark tooling under Alan Zaoxing Liu.</p>
           </article>
           <article>
-            <span>January 2026 - Present</span>
+            <span>January 2026 - May 2026</span>
             <h3>Research Assistant, GAMMA Lab</h3>
-            <p>TraceGround: agentic video reasoning system for producing grounded traces with timestamps, frames, clips, and evidence-backed reasoning steps under Dinesh Manocha.</p>
+            <p>Contributed to ongoing grounded video reasoning evaluation work under Dinesh Manocha.</p>
           </article>
           <article>
             <span>June 2025 - August 2025</span>
             <h3>ML Engineer Intern, Connyct</h3>
-            <p>CampusAI event recommendation with hybrid retrieval, collaborative filtering, FastAPI, Elasticsearch, Docker, AWS, and MLflow.</p>
+            <p>CampusAI event recommendation with hybrid retrieval, collaborative filtering, offline ranking metrics, FastAPI, Elasticsearch, Docker, AWS, and MLflow.</p>
           </article>
           <article>
             <span>July 2022 - July 2024</span>
             <h3>Software Engineer, Qualcomm</h3>
-            <p>LTE modem software, RRC protocol debugging, production issue triage, fuzz testing, and Python automation.</p>
+            <p>LTE Layer 3 RRC Cell Selection/Security ownership, Python automation, wireless analytics pipelines, and inference-tracking dashboards.</p>
           </article>
         </div>
       </section>
@@ -277,12 +368,14 @@
       <section class="resume-section" aria-labelledby="resume-title">
         <div>
           <p class="eyebrow">Resume variants</p>
-          <h2 id="resume-title">Resume Versions</h2>
+          <h2 id="resume-title">Resume &amp; Credentials</h2>
         </div>
         <div class="resume-links">
           <a href="resumes/resume_applied_scientist.pdf">Research</a>
           <a href="resumes/resume_ml_ai_engineer.pdf">ML Systems</a>
           <a href="resumes/resume_software_engineer.pdf">Software Infrastructure</a>
+          <a href="https://www.coursera.org/user/9cdf438d7b8cd1aa5ef034ddc11645ed">Coursera</a>
+          <a href="https://www.nvidia.com/en-gb/training/instructor-led-workshops/train-deep-learning-models-on-multi-gpus/">NVIDIA DLI</a>
         </div>
       </section>
     </main>
