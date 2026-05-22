@@ -130,11 +130,11 @@
               <span class="repo-stat">GitHub</span>
             </div>
             <h3>DistTrain Lab</h3>
-            <p>Distributed LLM post-training lab for validating SFT/DPO/PPO and GRPO-style recipe wiring before expensive runs.</p>
+            <p>Distributed LLM pretraining and post-training lab with 8x L40 launch planning, smoke runs, and evaluation gates.</p>
             <ul>
+              <li>Causal-LM pretraining manifests, LR/batch/precision sweeps, validation loss, and perplexity gates</li>
               <li>TRL/Accelerate launch metadata with FSDP, DeepSpeed, Megatron, and TorchTitan-style configs</li>
-              <li>Deterministic PPO and GRPO-style smoke runs with verifiable-reward metrics</li>
-              <li>Memory, throughput, evaluation, and promotion artifacts with pytest validation</li>
+              <li>Deterministic pretraining and PPO/GRPO-style smoke runs with pytest validation</li>
             </ul>
             <a href="https://github.com/GnaneshGnani/disttrain-lab">View repo</a>
           </article>
